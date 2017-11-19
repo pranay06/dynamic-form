@@ -1,0 +1,41 @@
+{
+  "name": "dynamic-form",
+  "version": "1.0.0",
+  "description": "Contains resuable filter components",
+  "main": "lib/index.js",
+  "author": "Pranay Gandhi",
+  "license": "MIT",
+  "scripts": {
+    "start": "npm-run-all --parallel open:src",
+    "open:src": "babel-node tools/srcServer.js",
+    "build": "babel ./src --out-dir ./lib --copy-files"
+  },
+  "dependencies": {
+    "css-loader": "^0.28.7",
+    "material-ui": "^0.19.4",
+    "react": "^16.1.1",
+    "react-aztec": "^0.1.36",
+    "react-dom": "^16.1.1",
+    "react-jsonschema": "^1.0.0",
+    "react-jsonschema-form": "^1.0.0",
+    "style-loader": "^0.19.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-plugin-react-intl": "^2.3.1",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-react-hmre": "^1.1.1",
+    "eventsource-polyfill": "^0.9.6",
+    "html-webpack-plugin": "^2.30.1",
+    "open": "^0.0.5",
+    "webpack": "^3.4.1",
+    "webpack-dev-middleware": "^1.12.0",
+    "webpack-dev-server": "^2.6.1",
+    "webpack-hot-middleware": "^2.18.2"
+  }
+}
